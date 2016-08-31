@@ -10,13 +10,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-                       
-            Console.WriteLine("Привет, как тебя зовут?");
-            string s = Console.ReadLine();
-            Console.WriteLine("Привет, " + s);
 
-            Console.WriteLine("Рад тебя видеть, " + s);
-            Console.ReadKey();
+            var R = new Random();
+           
+                Console.WriteLine("Случайное число: {0}", R.Next(1, 100));
+                Console.ReadKey();
+           
         }
     }
 }
